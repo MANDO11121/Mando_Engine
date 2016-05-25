@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1446667744 source:n:\proyectos\programacion\c++\mando engine\main.cpp
+	<iostream>
+
+1464245233 source:n:\proyectos\programacion\c++\mando engine\motor\graficos\gl_vinculacion\array_buffer.cpp
+	"array_buffer.h"
+
+1464244654 n:\proyectos\programacion\c++\mando engine\motor\graficos\gl_vinculacion\array_buffer.h
+	<GL/glew.h>
+
+1439214890 n:\proyectos\programacion\c++\mando engine\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1464245284 source:n:\proyectos\programacion\c++\mando engine\motor\graficos\gl_vinculacion\index_buffer.cpp
+	"index_buffer.h"
+
+1464245323 n:\proyectos\programacion\c++\mando engine\motor\graficos\gl_vinculacion\index_buffer.h
+	<GL/glew.h>
+
