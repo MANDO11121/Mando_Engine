@@ -9,6 +9,11 @@ Textura2D::Textura2D()
 
 }
 
+Textura2D::Textura2D(const char* nombre) : Recurso(nombre)
+{
+
+}
+
 Textura2D::~Textura2D()
 {
 
@@ -45,7 +50,6 @@ bool Textura2D::cargar(const char* archivo)
 void Textura2D::eliminar()
 {
     glDeleteTextures(1,&_textID);
-    delete(this);
 }
 
 GLuint Textura2D::getID()

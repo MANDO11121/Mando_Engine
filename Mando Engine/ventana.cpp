@@ -17,10 +17,6 @@ Ventana::~Ventana()
 
 void Ventana::enCargar()
 {
-    graficos::Textura_Arreglada tx(nullptr,5);
-
-    tx.getFrame(2);
-
     GLfloat vertices[]={
         -0.5f,0.5f,0.0f,
         0.5f,0.5f,0.0f,
@@ -36,6 +32,7 @@ void Ventana::enCargar()
     _Vao.add_Array_Buffer(b,0);
 
     _shader.cargar("Recursos/Shaders/simple.vs","Recursos/Shaders/simple.fs");
+
 }
 
 void Ventana::enActualizar()
@@ -45,6 +42,14 @@ void Ventana::enActualizar()
 
 void Ventana::enRenderizar()
 {
+    graficos::Color c(COLOR_Brown);
+    #if 0
+    glBegin(GL_POINT);
+    glPointSize(20);
+    glVertex2f(0,0);
+    glEnd();
+    #endif // 1-
+    #if 1
     _shader.habilitar();
     _Vao.habilitar();
     _Ibo.habilitar();
@@ -52,7 +57,9 @@ void Ventana::enRenderizar()
     _Ibo.desabilitar();
     _Vao.desabilitar();
     _shader.desabilitar();
+    #endif // 0
 }
+
 
 void Ventana::enTerminar()
 {

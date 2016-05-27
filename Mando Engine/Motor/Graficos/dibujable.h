@@ -8,6 +8,7 @@ class Dibujable : public Recurso
 {
 public:
     Dibujable();
+    Dibujable(TransData trans,Color color,const char* nombre);
     virtual ~Dibujable();
 
 protected:

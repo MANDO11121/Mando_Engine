@@ -1,14 +1,15 @@
 #pragma once
 #include "textura.h"
 #include "modelo.h"
+#include "recurso.h"
 namespace graficos{
 
-class Textura_Arreglada
+class Textura_Arreglada : public Recurso
 {
 public:
     Textura_Arreglada();
-    Textura_Arreglada(Textura2D *textura,GLuint numeroframes);
-    Textura_Arreglada(Textura2D *textura,GLuint numeroframes,TransData *frames);
+    Textura_Arreglada(Textura2D *textura,GLuint numeroframes,const char* nombre);
+    Textura_Arreglada(Textura2D *textura,GLuint numeroframes,TransData *frames,const char* nombre);
     virtual ~Textura_Arreglada();
 
     void setFrame(GLuint indice,TransData &frame);

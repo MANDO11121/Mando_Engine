@@ -44,12 +44,13 @@ void GL_Contexto::correr()
 bool GL_Contexto::iniciar()
 {
     glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    #if 0
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_ANY_PROFILE);
     glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
     glfwWindowHint(GLFW_REFRESH_RATE,GLFW_DONT_CARE);
-
+    #endif
     _ventana = glfwCreateWindow(_ancho, _alto,_titulo.c_str() , NULL,
     NULL);
     if (_ventana == NULL)
@@ -68,9 +69,9 @@ bool GL_Contexto::iniciar()
         return false;
     }
 
-    glEnable(GL_DEPTH_TEST);
+    /*glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
-    glCullFace(GL_BACK);
+    glCullFace(GL_BACK);*/
 
     MLOG(glGetString(GL_VENDOR));
     MLOG(glGetString(GL_VERSION));

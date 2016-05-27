@@ -94,12 +94,12 @@
 
 1464191145 f:\proyectos\programacion\c++\mando_engine\mando engine\motor\recurso.h
 
-1464333854 source:n:\proyectos\programacion\c++\mando_engine\mando engine\main.cpp
+1464421701 source:n:\proyectos\programacion\c++\mando_engine\mando engine\main.cpp
 	<iostream>
 	"ventana.h"
 	"color.h"
 
-1464341500 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\recurso.h
+1464395593 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\recurso.h
 
 1464333833 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\gl_vinculacion\array_buffer.cpp
 	"array_buffer.h"
@@ -135,15 +135,16 @@
 1464342085 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\logger.h
 	<iostream>
 
-1464333787 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\gl_vinculacion\textura.cpp
+1464397381 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\gl_vinculacion\textura.cpp
 	"textura.h"
 	<string>
 	"stb_image.h"
 
-1464333740 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\gl_vinculacion\textura.h
+1464403852 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\gl_vinculacion\textura.h
 	<GL/glew.h>
 	<iostream>
 	"logger.h"
+	"recurso.h"
 
 1418855074 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\loaders\stb_image.h
 	<stdio.h>
@@ -179,7 +180,7 @@
 1464340384 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\color.h
 	"glm/glm.hpp"
 
-1464334679 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\gl_vinculacion\gl_contexto.cpp
+1464388788 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\gl_vinculacion\gl_contexto.cpp
 	"gl_contexto.h"
 
 1464333713 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\gl_vinculacion\gl_contexto.h
@@ -208,7 +209,7 @@
 	<GL/glext.h>
 	<GL/glu.h>
 
-1464342085 source:n:\proyectos\programacion\c++\mando_engine\mando engine\ventana.cpp
+1464392870 source:n:\proyectos\programacion\c++\mando_engine\mando engine\ventana.cpp
 	"ventana.h"
 	"textura_arreglada.h"
 
@@ -612,25 +613,47 @@
 	<intrin.h>
 	<limits>
 
-1464341452 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\dibujable.cpp
+1464403382 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\dibujable.cpp
 	"dibujable.h"
 
-1464340605 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\dibujable.h
+1464403395 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\dibujable.h
 	"glm/glm.hpp"
 	"color.h"
 	"recurso.h"
 	"modelo.h"
 
-1464340670 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\sprite.cpp
+1464403832 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\sprite.cpp
 	"sprite.h"
 
-1464341661 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\sprite.h
+1464403702 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\sprite.h
 	"dibujable.h"
-
-1464342091 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\textura_arreglada.cpp
 	"textura_arreglada.h"
 
-1464342102 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\textura_arreglada.h
+1464395773 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\textura_arreglada.cpp
+	"textura_arreglada.h"
+
+1464395773 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\graficos\textura_arreglada.h
 	"textura.h"
 	"modelo.h"
+	"recurso.h"
+
+1464422052 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\recursos.cpp
+	"recursos.h"
+	<stdio.h>
+	<string.h>
+
+1464421489 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\recursos.h
+	<vector>
+	<dibujable.h>
+	<sprite.h>
+	<textura.h>
+	<textura_arreglada.h>
+
+1464422702 source:n:\proyectos\programacion\c++\mando_engine\mando engine\motor\estructuras\arbol_recursos.cpp
+	"arbol_recursos.h"
+
+1464422335 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\estructuras\arbol_recursos.h
+	"recurso.h"
+
+1464421157 n:\proyectos\programacion\c++\mando_engine\mando engine\motor\estructuras\string.h
 

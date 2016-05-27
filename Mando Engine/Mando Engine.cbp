@@ -19,6 +19,7 @@
 					<Add directory="Motor/Graficos/GL_Vinculacion" />
 					<Add directory="Motor/Graficos/Loaders" />
 					<Add directory="include" />
+					<Add directory="Motor/Estructuras" />
 				</Compiler>
 				<Linker>
 					<Add library="glew32s" />
@@ -38,6 +39,8 @@
 					<Add option="-O2" />
 					<Add directory="Motor/Graficos/GL_Vinculacion" />
 					<Add directory="Motor/Graficos" />
+					<Add directory="Motor" />
+					<Add directory="Motor/Estructuras" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -48,6 +51,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Motor/Estructuras/arbol_recursos.cpp" />
+		<Unit filename="Motor/Estructuras/arbol_recursos.h" />
 		<Unit filename="Motor/Graficos/GL_Vinculacion/array_buffer.cpp" />
 		<Unit filename="Motor/Graficos/GL_Vinculacion/array_buffer.h" />
 		<Unit filename="Motor/Graficos/GL_Vinculacion/gl_contexto.cpp" />
@@ -75,6 +80,8 @@
 		<Unit filename="Motor/Graficos/textura_arreglada.h" />
 		<Unit filename="Motor/logger.h" />
 		<Unit filename="Motor/recurso.h" />
+		<Unit filename="Motor/recursos.cpp" />
+		<Unit filename="Motor/recursos.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="ventana.cpp" />
 		<Unit filename="ventana.h" />
