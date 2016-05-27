@@ -1,7 +1,7 @@
 #pragma once
 #define GLEW_STATIC
 #include <GL/glew.h>
-namespace mandoengine{namespace graficos{
+namespace graficos{
 class Array_Buffer{
 public:
 	Array_Buffer();
@@ -14,4 +14,4 @@ private:
 	GLuint _Buffer_ID;
 	GLuint _Num_Componentes;
 };
-}}
+}

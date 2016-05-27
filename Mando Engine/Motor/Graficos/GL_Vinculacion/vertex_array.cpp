@@ -1,17 +1,22 @@
 #include "vertex_array.h"
-namespace mandoengine{namespace graficos{
+namespace graficos{
 
 	Vertex_Array::Vertex_Array()
 	{
-		glGenVertexArrays(1,&_Array_ID);
+        _Array_ID=0;
 	}
 
 	Vertex_Array::~Vertex_Array()
 	{
 		for(GLuint i=0;i<=_buffers.size();i++)
 			delete _buffers[i];
+        glDeleteVertexArrays(1,&_Array_ID);
 	}
 
+    void Vertex_Array::crear()
+    {
+        glGenVertexArrays(1,&_Array_ID);
+    }
 	void Vertex_Array::add_Array_Buffer(Array_Buffer *buffer,GLuint indice)
 	{
 		habilitar();
@@ -32,4 +37,4 @@ namespace mandoengine{namespace graficos{
 		glBindVertexArray(_Array_ID);
 	}
 
-}}
+}

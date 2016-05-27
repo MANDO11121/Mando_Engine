@@ -1,6 +1,6 @@
 #include "array_buffer.h"
 
-namespace mandoengine{namespace graficos{
+namespace graficos{
 
 	Array_Buffer::Array_Buffer()
 	{
@@ -31,4 +31,4 @@ namespace mandoengine{namespace graficos{
 		glBindBuffer(GL_ARRAY_BUFFER,0);
 	}
 
-}}
+}

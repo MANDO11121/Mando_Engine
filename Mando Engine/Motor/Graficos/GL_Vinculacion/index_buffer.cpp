@@ -1,6 +1,6 @@
 #include "index_buffer.h"
 
-namespace mandoengine{namespace graficos{
+namespace graficos{
 	Index_Buffer::Index_Buffer()
 	{
 
@@ -11,7 +11,7 @@ namespace mandoengine{namespace graficos{
 
 	}
 
-	void Index_Buffer::crearBuffer(GLfloat* datos,GLsizei total)
+	void Index_Buffer::crearBuffer(GLushort* datos,GLsizei total)
 	{
 	    _Num_Componentes=total;
 		glGenBuffers(1,&_Buffer_ID);
@@ -30,4 +30,4 @@ namespace mandoengine{namespace graficos{
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,0);
 	}
 
-}}
+}

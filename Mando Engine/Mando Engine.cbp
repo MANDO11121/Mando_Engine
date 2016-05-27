@@ -36,6 +36,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="Motor/Graficos/GL_Vinculacion" />
+					<Add directory="Motor/Graficos" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -48,13 +50,34 @@
 		</Compiler>
 		<Unit filename="Motor/Graficos/GL_Vinculacion/array_buffer.cpp" />
 		<Unit filename="Motor/Graficos/GL_Vinculacion/array_buffer.h" />
+		<Unit filename="Motor/Graficos/GL_Vinculacion/gl_contexto.cpp" />
+		<Unit filename="Motor/Graficos/GL_Vinculacion/gl_contexto.h" />
 		<Unit filename="Motor/Graficos/GL_Vinculacion/index_buffer.cpp" />
 		<Unit filename="Motor/Graficos/GL_Vinculacion/index_buffer.h" />
+		<Unit filename="Motor/Graficos/GL_Vinculacion/simple_shader.cpp" />
+		<Unit filename="Motor/Graficos/GL_Vinculacion/simple_shader.h" />
+		<Unit filename="Motor/Graficos/GL_Vinculacion/textura.cpp" />
+		<Unit filename="Motor/Graficos/GL_Vinculacion/textura.h" />
 		<Unit filename="Motor/Graficos/GL_Vinculacion/vertex_array.cpp" />
 		<Unit filename="Motor/Graficos/GL_Vinculacion/vertex_array.h" />
+		<Unit filename="Motor/Graficos/Loaders/stb_image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Motor/Graficos/Loaders/stb_image.h" />
+		<Unit filename="Motor/Graficos/color.cpp" />
+		<Unit filename="Motor/Graficos/color.h" />
+		<Unit filename="Motor/Graficos/dibujable.cpp" />
+		<Unit filename="Motor/Graficos/dibujable.h" />
+		<Unit filename="Motor/Graficos/modelo.h" />
+		<Unit filename="Motor/Graficos/sprite.cpp" />
+		<Unit filename="Motor/Graficos/sprite.h" />
+		<Unit filename="Motor/Graficos/textura_arreglada.cpp" />
+		<Unit filename="Motor/Graficos/textura_arreglada.h" />
 		<Unit filename="Motor/logger.h" />
 		<Unit filename="Motor/recurso.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="ventana.cpp" />
+		<Unit filename="ventana.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
